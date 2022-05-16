@@ -61,7 +61,7 @@ nav {
     margin: auto;
     margin-bottom: 20px;
     position: relative;
-    
+
     .icon {
         position: absolute;
         padding: 10px;
@@ -168,7 +168,7 @@ nav {
     display: flex;
     flex-direction: column;
 
-    .signup-input{
+    .signup-input {
         width: 400px;
         height: 50px;
         color: $secondary;
@@ -176,7 +176,7 @@ nav {
         border: 1px solid $silver;
         padding-left: 50px;
         margin: 0 0 2% 0;
-        
+
     }
 
     .signup-input:focus {
@@ -222,6 +222,7 @@ nav {
     .hero {
         height: 90vh;
     }
+
     .hero-img {
         width: 50%;
         //height: auto;
@@ -255,6 +256,7 @@ nav {
             border: none;
             width: 30%;
         }
+
         button:hover {
             color: $accent2;
             background-color: $accent1;
@@ -278,6 +280,7 @@ nav {
             color: $accent1;
             border-color: $accent1;
         }
+
         button:hover {
             color: $secondary;
             border-color: $secondary;
@@ -304,7 +307,7 @@ nav {
 
     .contact-form {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
     }
 
     .contact-input {
@@ -400,8 +403,9 @@ nav {
         background-color: none;
         color: $secondary;
         border-color: $secondary;
-        font-size: .8em;   
+        font-size: .8em;
     }
+
     .card-btn:hover {
         background-color: $secondary;
         color: $accent2;
@@ -418,12 +422,13 @@ nav {
         text-align: center;
         overflow: hidden;
 
-        .img{
+        .img {
             width: 400px;
             height: auto;
             object-fit: contain;
         }
     }
+
     .product-info {
         border-left: 1px solid $accent2;
         padding: 2% 0 0 2%;
@@ -432,7 +437,8 @@ nav {
             font-size: 1.2em;
             width: 80%;
         }
-        .product-category{
+
+        .product-category {
             color: $accent1;
             width: 50%;
 
@@ -440,6 +446,7 @@ nav {
                 margin-right: 2%;
             }
         }
+
         .product-price {
             font-size: 1.6em;
         }
@@ -474,7 +481,7 @@ nav {
 
 .cart {
     opacity: .1;
-    position:absolute;
+    position: absolute;
     left: 89%;
 }
 
@@ -484,14 +491,17 @@ nav {
     height: 60vh;
     text-align: center;
     padding: 5% 0 0 0;
+
     .title {
         font-size: 3em;
     }
+
     .text {
         color: $accent1;
         margin: 2% 0 0 0;
         font-size: 1.5em;
     }
+
     .back-btn {
         color: $secondary;
         border-color: $secondary;
@@ -526,3 +536,35 @@ nav {
     border: 4px solid yellow;
 }
 //TEST */
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .signin-form {
+        width: 100%;
+
+        .input-div {
+            width: 100%;
+        }
+
+        .signin-input {
+            width: 100%;
+        }
+    }
+
+    .signup-form {
+        width: 100%;
+
+        .input-div {
+            width: 100%;
+        }
+
+        .signup-input {
+            width: 100%;
+        }
+    }
+
+}
