@@ -15,7 +15,7 @@ const Signin = () => {
       <h5 className="signin-title">Sign in</h5>
       <form className="signin-form">
         <div className="input-div">
-          <i className="bi bi-person icon"></i>
+          <i className="bi bi-envelope icon"></i>
           <input className="signin-input" type="text" placeholder="Email" />
         </div>
         <div className="input-div">
