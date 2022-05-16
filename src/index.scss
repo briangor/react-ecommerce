@@ -540,7 +540,9 @@ nav {
 
 @media only screen and (max-width: 600px) {
     body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        //font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     }
 
     .signin-form {
@@ -548,10 +550,16 @@ nav {
 
         .input-div {
             width: 100%;
+            margin: 5% 0;
         }
 
         .signin-input {
             width: 100%;
+        }
+
+        .signin-btn {
+            margin-bottom: 5%;
+            margin-top: 5%;
         }
     }
 
@@ -560,10 +568,41 @@ nav {
 
         .input-div {
             width: 100%;
+            margin: 5% 0;
         }
 
         .signup-input {
             width: 100%;
+        }
+        .signup-btn {
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        height: 100%;
+
+        .side1 {
+            width: 90%;
+            margin: auto;
+
+            .contact-form {
+                width: 100%;
+
+                .contact-input {
+                    width: 100%;
+                }
+            }
+        }
+        .contact-map {
+            width: 90%;
+            margin: 4% auto;
         }
     }
 

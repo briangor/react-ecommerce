@@ -6,7 +6,7 @@ const Contact = () => {
     <>
       <div className="container contact">
         <div className="row">
-          <div className="col side1">
+          <div className="col-md-6 side1">
             <h5 className="contact-title">Get in touch </h5>
             <form className="contact-form" action="">
               <label>
@@ -30,7 +30,7 @@ const Contact = () => {
               <button className="btn contact-btn">Send</button>
             </form>
           </div>
-          <div class="col contact-map">
+          <div class="col-md-6 contact-map">
             <img src={mapImg} alt="map" />
             <i class="bi bi-geo contact-geoloc"></i>
           </div>
