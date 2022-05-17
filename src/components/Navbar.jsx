@@ -2,47 +2,53 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <Link to="" className="navbar-brand">
-          Shop
-        </Link>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          {/* <span className="navbar-toggler-icon"></span>Menu */}
-          Menu
-        </button>
-        <div
-          className="collapse navbar-collapse justify-content-center"
-          id="navbarNavAltMarkup"
-        >
-          <div className="navbar-nav">
-            <Link to="" className="nav-link active" aria-current="page">
-              {/* <i className="bi bi-house"></i>  */}
-              Home
-            </Link>
-            <Link to="about" className="nav-link">
-              About
-            </Link>
-            <Link to="contact" className="nav-link">
-              Contact
-            </Link>
+    <>
+      <nav className="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+        <div className="container">
+          <Link to="" className="navbar-brand d-flex w-50 me-auto">
+            Shop
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsingNavbar3"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="navbar-collapse collapse w-100"
+            id="collapsingNavbar3"
+          >
+            <ul className="navbar-nav w-100 justify-content-center">
+              <li className="nav-item active">
+                <Link to="" className="nav-link">
+                  {/* <i className="bi bi-house"></i>  */}
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="about" className="nav-link">
+                  About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
+            </ul>
+            <ul className="nav navbar-nav ms-auto w-100 justify-content-end">
+              <li className="nav-item">
+                <Link to="signin" className="nav-link">
+                  Sign in
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
-        <div className="navbar-nav">
-          <Link to="signin" className="nav-link justify-content-end">
-            Sign in
-          </Link>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 

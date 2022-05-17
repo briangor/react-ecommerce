@@ -45,6 +45,7 @@ nav {
 
 }
 
+
 .navbar-light .navbar-toggler {
     font-size: 16px;
 }
@@ -221,19 +222,25 @@ nav {
 .home {
     .hero {
         height: 90vh;
+        // background-image: url('https://static.remove.bg/remove-bg-web/f8fbcafbd1f3872923a7108604df9ddb62a43564/assets/start_remove-c851bdf8d3127a24e2d137a55b1b427378cd17385b01aec6e59d5d4b5f39d2ec.png');
+        background-image: url("assets/images/img1.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        background-size: 60%;
     }
 
-    .hero-img {
+    /*     .hero-img {
         width: 50%;
         //height: auto;
         //margin: 0 auto;
         margin: 0 0 0 50%;
         display: block;
         position: relative;
-    }
+    } */
 
     .hero-text {
-        position: absolute;
+        //position: absolute;
         color: $secondary;
         top: 20%;
         padding: 5% 10%;
@@ -242,11 +249,11 @@ nav {
         .headline {
             font-size: 3.5em;
             font-weight: 600;
-            margin: 0 0 15% 0;
+            margin: 5% 0 5% 0;
         }
 
         .tagline {
-            margin: 0 0 15% 0;
+            margin: 0 0 10% 0;
             font-size: 2em;
         }
 
@@ -254,7 +261,7 @@ nav {
             color: $accent2;
             background-color: $secondary;
             border: none;
-            width: 30%;
+            width: 20%;
         }
 
         button:hover {
@@ -295,6 +302,8 @@ nav {
 
     .about-signature {
         width: 20%;
+        max-width: 20%;
+        height: auto;
         margin: 2% 0;
     }
 }
@@ -541,7 +550,7 @@ nav {
 @media only screen and (max-width: 600px) {
     body {
         //font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     }
 
@@ -574,6 +583,7 @@ nav {
         .signup-input {
             width: 100%;
         }
+
         .signup-btn {
             margin-bottom: 5%;
             margin-top: 5%;
@@ -600,6 +610,7 @@ nav {
                 }
             }
         }
+
         .contact-map {
             width: 90%;
             margin: 4% auto;

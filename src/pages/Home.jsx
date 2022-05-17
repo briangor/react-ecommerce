@@ -50,7 +50,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="hero">
-        <img src={heroImg} alt="Hero" className="hero-img" />
+        {/* <img src={heroImg} alt="Hero" className="hero-img" /> */}
         <div className="hero-text">
           <h1 className="headline">Deals just got better!</h1>
           <h4 className="tagline">Jump onto the bandwagon :)</h4>
