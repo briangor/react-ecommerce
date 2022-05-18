@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  let cart = true;
+
   return (
     <>
       <nav className="navbar navbar-light navbar-expand-md">
@@ -39,10 +41,13 @@ const Navbar = () => {
               </li>
             </ul>
             <ul className="nav navbar-nav ms-auto w-100 justify-content-end">
-            <li className="nav-item">
+              <li className="nav-item">
                 <Link to="cart" className="nav-link cart-icon">
-                <i class="bi bi-cart2"></i>
+                  <i class="bi bi-cart2"></i>
                 </Link>
+                {cart && <span class="badge rounded-pill bg-secondary">
+                    5
+                  </span>}
               </li>
               <li className="nav-item">
                 <Link to="signin" className="nav-link">

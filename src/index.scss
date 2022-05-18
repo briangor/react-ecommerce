@@ -541,10 +541,12 @@ footer {
     margin: 5px 20px 0 0;
     font-size: 20px;
     padding: 0;
+}
 
-    &:focus {
-        color: blue;
-    }
+.badge {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 20px;
 }
 
 
