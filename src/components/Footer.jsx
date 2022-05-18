@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-        <footer className="footer">
+        <footer>
             @2022 React-Ecommerce
         </footer>
      );

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+      <nav className="navbar navbar-light navbar-expand-md">
         <div className="container">
           <Link to="" className="navbar-brand d-flex w-50 me-auto">
             Shop

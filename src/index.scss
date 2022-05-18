@@ -36,23 +36,14 @@ body {
 }
 
 // Nav
-nav {
-    padding: 0 5%;
-
-    a {
-        cursor: pointer;
-    }
-
-}
-
-
 .navbar-light .navbar-toggler {
     font-size: 16px;
 }
 
 // Footer
-.footer {
-    padding: 0 5%;
+footer {
+    padding: 0 8%;
+    font-size: 12px;
 }
 
 // Form inputs

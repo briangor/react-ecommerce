@@ -2,6 +2,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import useFetch from "../useFetch";
 import axios from "axios";
+import Swal from 'sweetalert2';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -45,6 +46,26 @@ const ProductDetails = () => {
       navigate('/');
   }
 
+const handleAddToCart = () => {
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 4000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })    
+  Toast.fire({
+    icon: 'success',
+    title: 'Added to cart',
+    color: '#193561',
+    width: '20%'
+  })
+}
+
   return (
     <>
     <button className="product-close-btn btn btn-outline-danger" onClick={handleClose}>Close</button>
@@ -59,7 +80,7 @@ const ProductDetails = () => {
               <p className="product-category"><i className="bi bi-tag"></i>{data.category}</p>
               <div className="product-cart-div">
               <span className="product-price">${data.price}</span>
-              <button className="btn product-cart">Add to cart</button>
+              <button className="btn product-cart" onClick={handleAddToCart}>Add to cart</button>
               <Link to='/cart'>
                 <button className="btn cart">Cart</button>
               </Link>
