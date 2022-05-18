@@ -15,15 +15,16 @@ const Home = () => {
     const getProducts = async () => {
       setLoading(false);
       //const response = await fetch("https://fakestoreapi.com/products");
-      //const response = await axios.get("https://fakestoreapi.com/products");
-      const response = await axios.get("http://localhost:8000/products");
+      const response = await axios.get("https://fakestoreapi.com/products");
+      //const response = await axios.get("http://localhost:8000/products");
+      
       if (componentMounted) {
         //setData(await response.clone().json());
         //setFilter(await response.json());
         setData(await response.data);
         setFilter(await response.data);
         setLoading(false);
-        // console.log(filter);
+        //console.log(response);
       }
 
       return () => {
