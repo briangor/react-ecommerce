@@ -39,6 +39,11 @@ const Navbar = () => {
               </li>
             </ul>
             <ul className="nav navbar-nav ms-auto w-100 justify-content-end">
+            <li className="nav-item">
+                <Link to="cart" className="nav-link cart-icon">
+                <i class="bi bi-cart2"></i>
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link to="signin" className="nav-link">
                   Sign in

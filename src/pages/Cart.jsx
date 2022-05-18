@@ -15,7 +15,7 @@ const Cart = () => {
       >
         Close
       </button>
-      <h6>Cart</h6>
+      <h2 style={{paddingLeft: "100px"}}>Cart</h2>
     </>
   );
 };
